@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">>
+<head>
+<meta charset="ISO-8859-1">
+<title>My Team</title>
+</head>
+<body>
+
+	<th:block th:fragment="dreamTeam(player, team)">
+		
+		<!--Display a single PLayer And Team Object-->
+ 		<p th:text="${player}">Player</p>
+		<p th:text="${team}">Team</p> 		
+		
+		
+		<!--Display a List of players in a table format -->
+		<table>
+			<tr><th>Name</th><th>Jersey#</th><th>Team</th></tr>
+			<tr th:each="e : ${dreamTeam}">
+				<td th:text="|${e.lastName}, ${e.firstName}">name</td>
+				<td th:text="${e.number}">name</td>
+				<td th:text="${e.team}">name</td></tr>		
+		</table>		
+	</th:block>
+	
+</body>
+</html>

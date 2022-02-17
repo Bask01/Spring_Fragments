@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	header, footer {
+		border:2px solid green;
+		margin:10px;
+		padding: 10px;
+	}
+</style>
+</head>
+<body>
+<!-- 	<header th:insert="fragments/main :: head1(${name})"></header>
+		<header th:replace="fragments/main :: head1"></header>
+		
+		<div th:replace="fragments/math.html :: doubleNum(25)"></div>
+		
+		<div th:insert="fragments/math :: multiply(3, 4)"></div>
+		
+		<div th:replace="fragments/math :: divide(op2=4, op1=3)"></div>
+		<div th:replace="fragments/math :: divide(1, 1)"></div>
+	
+		
+		<footer th:insert="fragments/main :: foot"></footer>
+		<footer th:replace="fragments/main :: foot(${year}, ${name})"></footer> -->
+		
+		<div th:replace="fragments/teams.html :: dreamTeam(${player}, ${team})"></div>
+	
+		
+		
+</body>
+</html>

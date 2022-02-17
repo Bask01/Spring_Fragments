@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>My Fragments</title>
+</head>
+<body>
+
+<!--<th:block th:fragment="head1">
+		<h1>Kubra Bas</h1>
+		<h2>Testing Thymeleaf Fragments</h2>
+	</th:block> -->
+	
+	
+	<th:block th:fragment="head1(name)">
+		<h1 th:text="${name}">Kubra Bas</h1>
+		<h2>Testing Thymeleaf Fragments</h2>
+	</th:block>
+	
+	
+	
+	<footer th:fragment="foot(year, name)">
+	
+		<address>&copy; 
+				<span th:text="${year}">2021</span>
+				<span th:text="${name}">Kubra Bas</span>				
+		</address>
+		
+		
+		
+	</footer>
+</body>
+</html>

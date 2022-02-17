@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Math Fragments</title>
+</head>
+<body>
+	
+		<div th:fragment="doubleNum(value)"
+			th:text="${value * 2}"></div>
+		
+		<div th:fragment="multiply(op1, op2)"
+			th:text="${op1 * op2}"></div>
+		
+		<div th:fragment="divide(op1, op2)" th:assert="${op2 != 0}">
+			<span th:text="${op1 / op2}"></span></div>
+			
+</body>
+</html>
